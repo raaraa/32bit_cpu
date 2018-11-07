@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/raul/Desktop/485-project/cpu/main.xst" -ofn "/home/raul/Desktop/485-project/cpu/main.syr" 
