@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: main.prj
@@ -108,6 +108,12 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/sign_extender.vhd" into library work
+Parsing entity <sign_extender>.
+Parsing architecture <Behavioral> of entity <sign_extender>.
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/mux_alu_B.vhd" into library work
+Parsing entity <mux_alu_B>.
+Parsing architecture <Behavioral> of entity <mux_alu_b>.
 Parsing VHDL file "/home/raul/Desktop/485-project/cpu/main.vhd" into library work
 Parsing entity <main>.
 Parsing architecture <Behavioral> of entity <main>.
@@ -117,6 +123,17 @@ Parsing architecture <Behavioral> of entity <main>.
 =========================================================================
 
 Elaborating entity <main> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "/home/raul/Desktop/485-project/cpu/main.vhd" Line 31: Using initial value "0111111111111111" for se_input since it is never assigned
+WARNING:HDLCompiler:871 - "/home/raul/Desktop/485-project/cpu/main.vhd" Line 34: Using initial value "00010010001101000101011001111000" for read_reg_2 since it is never assigned
+WARNING:HDLCompiler:871 - "/home/raul/Desktop/485-project/cpu/main.vhd" Line 35: Using initial value "00000000000000000000000000000001" for mux_add_4 since it is never assigned
+WARNING:HDLCompiler:871 - "/home/raul/Desktop/485-project/cpu/main.vhd" Line 36: Using initial value "00000000000000000000000000010001" for shift_left_2 since it is never assigned
+WARNING:HDLCompiler:871 - "/home/raul/Desktop/485-project/cpu/main.vhd" Line 38: Using initial value "11" for alusrcb since it is never assigned
+
+Elaborating entity <mux_alu_B> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <sign_extender> (architecture <Behavioral>) from library <work>.
+WARNING:Xst:2972 - "/home/raul/Desktop/485-project/cpu/main.vhd" line 42. All outputs of instance <U1> of block <mux_alu_B> are unconnected in block <main>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/raul/Desktop/485-project/cpu/main.vhd" line 52. All outputs of instance <U2> of block <sign_extender> are unconnected in block <main>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -124,6 +141,9 @@ Elaborating entity <main> (architecture <Behavioral>) from library <work>.
 
 Synthesizing Unit <main>.
     Related source file is "/home/raul/Desktop/485-project/cpu/main.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/raul/Desktop/485-project/cpu/main.vhd" line 42: Output port <output> of the instance <U1> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <main> synthesized.
@@ -199,7 +219,7 @@ Slice Logic Distribution:
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                           0
+ Number of IOs:                           2
  Number of bonded IOBs:                   0  out of    210     0%  
 
 Specific Feature Utilization:
@@ -249,15 +269,15 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.90 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 5.95 secs
  
 --> 
 
 
-Total memory usage is 505004 kilobytes
+Total memory usage is 505184 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

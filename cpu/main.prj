@@ -1,1 +1,3 @@
+vhdl work "sign_extender.vhd"
+vhdl work "mux_alu_B.vhd"
 vhdl work "main.vhd"

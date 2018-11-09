@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/raul/Desktop/485-project/cpu/tb_ALU_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/raul/Desktop/485-project/cpu/tb_ALU_isim_beh.wdb 
+Running: /home/raul/Desktop/485-project/cpu/tb_registers_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/raul/Desktop/485-project/cpu/tb_registers_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
@@ -31,6 +31,7 @@ Finished circuit initialization process.
 
 ** Failure:End
 User(VHDL) Code Called Simulation Stop
-In process tb_ALU.vhd:stim_proc 
+In process tb_registers.vhd:stim_proc 
  
 INFO: Simulator is stopped.
+# exit 0
