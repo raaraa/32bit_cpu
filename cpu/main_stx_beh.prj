@@ -1,0 +1,3 @@
+vhdl isim_temp "sign_extender.vhd"
+vhdl isim_temp "mux_alu_B.vhd"
+vhdl isim_temp "main.vhd"

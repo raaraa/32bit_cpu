@@ -1,0 +1,2 @@
+vhdl isim_temp "sign_extender.vhd"
+vhdl isim_temp "tb_sign_extend.vhd"

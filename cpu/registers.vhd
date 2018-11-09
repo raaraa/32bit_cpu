@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.numeric_std.ALL;
 
 entity registers is
 	port(read_reg1, read_reg2, write_reg	:	in STD_LOGIC_VECTOR (4 downto 0);
@@ -37,14 +38,14 @@ architecture Behavioral of registers is
 begin
 	read_reg_adr1 <= read_reg1;
 	read_reg_adr2 <= read_reg2;
-	read_data1 <= reg_arr(to_interger(unsigned(read_reg_adr1)));
-	read_data2 <= reg_arr(to_interger(unsigned(read_reg_adr2)));
+	read_data1 <= reg_arr(to_integer(unsigned(read_reg_adr1)));
+	read_data2 <= reg_arr(to_integer(unsigned(read_reg_adr2)));
 	write_reg_adr <= write_reg;
 	
 	process(reg_write)
 	begin
 		if (reg_write = '1') then
-			reg_arr(to_interger(unsigned(write_reg_adr))) <= write_data;
+			reg_arr(to_integer(unsigned(write_reg_adr))) <= write_data;
 		end if;
 	end process;
 end Behavioral;

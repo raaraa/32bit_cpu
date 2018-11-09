@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/raul/Desktop/485-project/cpu/tb_main_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_main" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/tb_main/tb_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_clk</obj_property>
+      <obj_property name="ObjectShortName">tb_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main/tb_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tb_reset</obj_property>
+      <obj_property name="ObjectShortName">tb_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main/U1_test/se_input" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">se_input[15:0]</obj_property>
+      <obj_property name="ObjectShortName">se_input[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main/U1_test/se_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">se_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">se_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main/U1_test/read_reg_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_reg_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_reg_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main/U1_test/mux_add_4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mux_add_4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mux_add_4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main/U1_test/shift_left_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">shift_left_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">shift_left_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main/U1_test/mux_output" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mux_output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mux_output[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_main/U1_test/alusrcb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alusrcb[1:0]</obj_property>
+      <obj_property name="ObjectShortName">alusrcb[1:0]</obj_property>
+   </wvobject>
+</wave_config>

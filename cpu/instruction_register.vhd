@@ -22,10 +22,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity instruction_register is
 	port( instruction_in		:	in STD_LOGIC_VECTOR (31 downto 0);
-			instruction_31_26	:	in STD_LOGIC_VECTOR (5 downto 0);
-			instruction_25_21	:	in STD_LOGIC_VECTOR (4 downto 0);
-			instruction_20_16	:	in STD_LOGIC_VECTOR (4 downto 0);
-			instruction_15_0	:	in STD_LOGIC_VECTOR (15 downto 0);
+			instruction_31_26	:	out STD_LOGIC_VECTOR (5 downto 0);
+			instruction_25_21	:	out STD_LOGIC_VECTOR (4 downto 0);
+			instruction_20_16	:	out STD_LOGIC_VECTOR (4 downto 0);
+			instruction_15_0	:	out STD_LOGIC_VECTOR (15 downto 0);
 			IRWrite				:	in STD_LOGIC );
 			
 end instruction_register;
