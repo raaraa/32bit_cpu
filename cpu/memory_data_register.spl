@@ -1,0 +1,5 @@
+[Inputs]
+=MemData_input[31:0]=
+[Outputs]
+=MemData_output[31:0]=
+[BiDir]

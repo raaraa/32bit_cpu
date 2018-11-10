@@ -29,7 +29,7 @@ architecture Behavioral of shift_left_2_26 is
 
 begin
 	shift_out (27 downto 2) <= shift_in (25 downto 0);
-	shfit_out (1 downto 0) <= "00";
+	shift_out (1 downto 0) <= "00";
 
 end Behavioral;
 

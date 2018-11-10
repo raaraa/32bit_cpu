@@ -1,5 +1,16 @@
 [Inputs]
-clk
 reset
+PC_control
+IorD
+MemRead
+MemWrite
+MemtoReg
+IRWrite
+ALUSrcA
+RegWrite
+RegDst
+=PCSource[1:0]=
+=ALUSrcB[1:0]=
+=alu_control[3:0]=
 [Outputs]
 [BiDir]

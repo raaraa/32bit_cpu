@@ -5,35 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/raul/Desktop/485-project/cpu/main.vhd" Line 31: Using initial value <arg fmt="%s" index="1">&quot;0111111111111111&quot;</arg> for <arg fmt="%s" index="2">se_input</arg> since it is never assigned
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/raul/Desktop/485-project/cpu/main.vhd" Line 34: Using initial value <arg fmt="%s" index="1">&quot;00010010001101000101011001111000&quot;</arg> for <arg fmt="%s" index="2">read_reg_2</arg> since it is never assigned
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/raul/Desktop/485-project/cpu/main.vhd" Line 35: Using initial value <arg fmt="%s" index="1">&quot;00000000000000000000000000000001&quot;</arg> for <arg fmt="%s" index="2">mux_add_4</arg> since it is never assigned
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/raul/Desktop/485-project/cpu/main.vhd" Line 36: Using initial value <arg fmt="%s" index="1">&quot;00000000000000000000000000010001&quot;</arg> for <arg fmt="%s" index="2">shift_left_2</arg> since it is never assigned
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/raul/Desktop/485-project/cpu/main.vhd" Line 38: Using initial value <arg fmt="%s" index="1">&quot;11&quot;</arg> for <arg fmt="%s" index="2">alusrcb</arg> since it is never assigned
-</msg>
-
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/raul/Desktop/485-project/cpu/main.vhd</arg>&quot; line <arg fmt="%d" index="2">42</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">U1</arg>&gt; of block &lt;<arg fmt="%s" index="4">mux_alu_B</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">main</arg>&gt;. Underlying logic will be removed.
-</msg>
-
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">/home/raul/Desktop/485-project/cpu/main.vhd</arg>&quot; line <arg fmt="%d" index="2">52</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">U2</arg>&gt; of block &lt;<arg fmt="%s" index="4">sign_extender</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">main</arg>&gt;. Underlying logic will be removed.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/raul/Desktop/485-project/cpu/main.vhd</arg>&quot; line <arg fmt="%s" index="2">42</arg>: Output port &lt;<arg fmt="%s" index="3">output</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U1</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
 </messages>
 

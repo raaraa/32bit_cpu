@@ -23,14 +23,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity shift_left_2_32 is
 	port( shift_in : in STD_LOGIC_VECTOR (31 downto 0);
 			shift_out : out STD_LOGIC_VECTOR (31 downto 0));
-	
 end shift_left_2_32;
 
 architecture Behavioral of shift_left_2_32 is
 
 begin
 	shift_out (31 downto 2) <= shift_in (29 downto 0);
-	shfit_out (1 downto 0) <= "00";
+	shift_out (1 downto 0) <= "00";
 
 end Behavioral;
 

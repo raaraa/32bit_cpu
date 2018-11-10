@@ -1,0 +1,2 @@
+vhdtdtfi -lib work memory_data_register.vhd -prj cpu -o memory_data_register.spl -module memory_data_register -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 memory_data_register.spl /home/raul/Desktop/485-project/cpu/memory_data_register.sym 

@@ -1,22 +1,61 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/raul/Desktop/485-project/cpu/tb_registers_isim_beh.exe -prj /home/raul/Desktop/485-project/cpu/tb_registers_beh.prj work.tb_registers 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/raul/Desktop/485-project/cpu/tb_main_isim_beh.exe -prj /home/raul/Desktop/485-project/cpu/tb_main_beh.prj work.tb_main 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/sign_extender.vhd" into library work
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/shift_left_2_32.vhd" into library work
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/shift_left_2_26.vhd" into library work
 Parsing VHDL file "/home/raul/Desktop/485-project/cpu/registers.vhd" into library work
-Parsing VHDL file "/home/raul/Desktop/485-project/cpu/tb_registers.vhd" into library work
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/pc.vhd" into library work
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/mux_write_reg.vhd" into library work
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/mux_write_data.vhd" into library work
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/mux_pc.vhd" into library work
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/mux_final.vhd" into library work
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/mux_alu_B.vhd" into library work
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/mux_alu_A.vhd" into library work
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/memory_data_register.vhd" into library work
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/memory.vhd" into library work
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/instruction_register.vhd" into library work
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/box_B.vhd" into library work
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/box_A.vhd" into library work
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/ALU_out.vhd" into library work
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/ALU.vhd" into library work
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/main.vhd" into library work
+Parsing VHDL file "/home/raul/Desktop/485-project/cpu/tb_main.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 97576 KB
+Fuse Memory Usage: 99252 KB
 Fuse CPU Usage: 910 ms
 Compiling package standard
 Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
 Compiling package numeric_std
+Compiling architecture behavioral of entity pc [pc_default]
+Compiling architecture behavioral of entity mux_pc [mux_pc_default]
+Compiling architecture behavioral of entity memory [memory_default]
+Compiling architecture behavioral of entity memory_data_register [memory_data_register_default]
+Compiling architecture behavioral of entity instruction_register [instruction_register_default]
+Compiling architecture behavioral of entity mux_write_reg [mux_write_reg_default]
 Compiling architecture behavioral of entity registers [registers_default]
-Compiling architecture behavior of entity tb_registers
+Compiling architecture behavioral of entity box_A [box_a_default]
+Compiling architecture behavioral of entity box_B [box_b_default]
+Compiling architecture behavioral of entity mux_alu_A [mux_alu_a_default]
+Compiling architecture behavioral of entity mux_alu_B [mux_alu_b_default]
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavioral of entity ALU_out [alu_out_default]
+Compiling architecture behavioral of entity sign_extender [sign_extender_default]
+Compiling architecture behavioral of entity shift_left_2_32 [shift_left_2_32_default]
+Compiling architecture behavioral of entity shift_left_2_26 [shift_left_2_26_default]
+Compiling architecture behavioral of entity mux_final [mux_final_default]
+Compiling architecture behavioral of entity mux_write_data [mux_write_data_default]
+Compiling architecture behavioral of entity main [main_default]
+Compiling architecture behavior of entity tb_main
 Time Resolution for simulation is 1ps.
-Compiled 6 VHDL Units
-Built simulation executable /home/raul/Desktop/485-project/cpu/tb_registers_isim_beh.exe
-Fuse Memory Usage: 669168 KB
-Fuse CPU Usage: 980 ms
-GCC CPU Usage: 1250 ms
+Waiting for 13 sub-compilation(s) to finish...
+Compiled 44 VHDL Units
+Built simulation executable /home/raul/Desktop/485-project/cpu/tb_main_isim_beh.exe
+Fuse Memory Usage: 675420 KB
+Fuse CPU Usage: 1030 ms
+GCC CPU Usage: 780 ms

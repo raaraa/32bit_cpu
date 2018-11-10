@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "/home/raul/Desktop/485-project/cpu/ALU_out.xst" -ofn "/home/raul/Desktop/485-project/cpu/ALU_out.syr" 
+xst -intstyle ise -ifn "/home/raul/Desktop/485-project/cpu/ALU_out.xst" -ofn "/home/raul/Desktop/485-project/cpu/ALU_out.syr" 
+xst -intstyle ise -ifn "/home/raul/Desktop/485-project/cpu/ALU_out.xst" -ofn "/home/raul/Desktop/485-project/cpu/ALU_out.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 ALU_out.ngc ALU_out.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ALU_out_map.ncd ALU_out.ngd ALU_out.pcf 

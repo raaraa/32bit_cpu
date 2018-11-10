@@ -1,0 +1,9 @@
+[Inputs]
+IRWrite
+=instruction_in[31:0]=
+[Outputs]
+=instruction_31_26[5:0]=
+=instruction_25_21[4:0]=
+=instruction_20_16[4:0]=
+=instruction_15_0[15:0]=
+[BiDir]

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work instruction_register.vhd -prj cpu -o instruction_register.spl -module instruction_register -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 instruction_register.spl /home/raul/Desktop/485-project/cpu/instruction_register.sym 

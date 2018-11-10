@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/raul/Desktop/485-project/cpu/tb_registers_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/raul/Desktop/485-project/cpu/tb_registers_isim_beh.wdb 
+Running: /home/raul/Desktop/485-project/cpu/tb_main_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/raul/Desktop/485-project/cpu/tb_main_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
@@ -27,11 +27,36 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_main/uut/U7/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_main/uut/U7/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
+at 0 ps, Instance /tb_main/uut/U3/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /tb_main/uut/U3/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 301 ns(1), Instance /tb_main/uut/U3/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 402 ns(1), Instance /tb_main/uut/U7/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 402 ns(2), Instance /tb_main/uut/U7/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 402 ns(2), Instance /tb_main/uut/U7/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 
 ** Failure:End
 User(VHDL) Code Called Simulation Stop
-In process tb_registers.vhd:stim_proc 
+In process tb_main.vhd:stim_proc 
+ 
+INFO: Simulator is stopped.
+# restart
+# run all
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_main/uut/U7/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_main/uut/U7/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /tb_main/uut/U3/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 301 ns(1), Instance /tb_main/uut/U3/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 402 ns(1), Instance /tb_main/uut/U7/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 402 ns(2), Instance /tb_main/uut/U7/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 402 ns(2), Instance /tb_main/uut/U7/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+
+** Failure:End
+User(VHDL) Code Called Simulation Stop
+In process tb_main.vhd:stim_proc 
  
 INFO: Simulator is stopped.
 # exit 0
